@@ -62,9 +62,9 @@
 
 '''
 #
-** 4- Monitoramento e Observabilidade
-'''
+4- Monitoramento e Observabilidade
 
+'''
     4.1- Configurar Prometheus e Grafana para coletar métricas do RabbitMQ.
     -   stack do prometheus configurada para coletar as metricas do serviço do rabbit e integrado com o grafana
 
@@ -72,6 +72,5 @@
     -   serviços monitorados e exibido com o dashboard oficial do rabbit
 
     4.3- Configurar alertas no Grafana ou na OCI Monitoring para identificar picos de carga e escalonamento.
-
 '''
 #    
