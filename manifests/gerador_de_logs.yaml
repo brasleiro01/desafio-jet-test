@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: gerador-de-logs
+spec:
+  containers:
+    - name: gerador-de-logs
+      image: vinnioliver66/gerador_de_logs:v5.0
