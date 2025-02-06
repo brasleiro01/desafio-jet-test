@@ -55,6 +55,7 @@
 ```
     3.1- Criar um gerador de carga que publique mensagens no RabbitMQ de forma massiva (por exemplo, usando Gatling, Locust, ou um simples script em Python com threads).
     - criado um script python para realizar a atividade consequentemente criei uma imagem docker para executar o mesmo dentro do cluster os arquivos estão na pasta /Docker-image/
+    -   OBS- caso o container não suba pode rodar o scripit na própria maquina.
 
     3.2- O teste deve provocar um aumento de consumo e forçar o escalonamento automático do RabbitMQ.
     - escalonamento programado para até 20 replicas quando 
