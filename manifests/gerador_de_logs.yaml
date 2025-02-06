@@ -5,4 +5,4 @@ metadata:
 spec:
   containers:
     - name: gerador-de-logs
-      image: vinnioliver66/gerador_de_logs:v5.0
+      image: vinnioliver66/ubuntu-carga:v1.0

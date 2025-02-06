@@ -16,12 +16,16 @@ spec:
     spec:
       containers:
         - name: grafana
-          image: grafana/grafana
+          image: grafana/grafana:latest
           ports:
             - containerPort: 3000
           env:
             - name: GF_SECURITY_ADMIN_PASSWORD
-              value: "admin"  # Defina uma senha segura para o usuário admin
+              value: "admin"
+            - name: GF_SECURITY_ADMIN_USER
+              value: "admin"
+            - name: GF_SECURITY_DISABLE_GRAVITY
+              value: "true"
 ---
 apiVersion: v1
 kind: Service
