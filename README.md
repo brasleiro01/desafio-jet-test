@@ -45,17 +45,21 @@ Tarefas
     -   hpa criado manifests/hpa.yaml
 
 3- Testes de Estresse
+'''
+
     3.1- Criar um gerador de carga que publique mensagens no RabbitMQ de forma massiva (por exemplo, usando Gatling, Locust, ou um simples script em Python com threads).
     - criado um script python para realizar a atividade consequentemente criei uma imagem docker para executar o mesmo dentro do cluster os arquivos estão na pasta /Docker-image/
 
     3.2- O teste deve provocar um aumento de consumo e forçar o escalonamento automático do RabbitMQ.
-    - escalonamento programado para até 20 replicas quando o rabbit chegar em 30% de utilização de CPU
+    - escalonamento programado para até 20 replicas quando 
+    o rabbit chegar em 30% de utilização de CPU
 
+'''
 4- Monitoramento e Observabilidade
     4.1- Configurar Prometheus e Grafana para coletar métricas do RabbitMQ.
     -   stack do prometheus configurada para coletar as metricas do serviço do rabbit e integrado com o grafana
 
     4.2- Monitorar métricas como fila de mensagens, consumo de CPU/memória e taxa de processamento.
     -   serviços monitorados e exibido com o dashboard oficial do rabbit
-    
+
     4.3- Configurar alertas no Grafana ou na OCI Monitoring para identificar picos de carga e escalonamento.
