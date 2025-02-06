@@ -1,7 +1,9 @@
 # desafio-jet-test
+**Tarefas
 
-Tarefas
-1- Configuração de Rede (Networking)
+**1- Configuração de Rede (Networking)
+'''
+
     1.1- Criar duas VCNs na OCI, separadas em diferentes domínios de falha ou regiões.
     -   criado duas vcn sendo uma em são paulo e outra em vinhedo
         vcn-sp1
@@ -30,9 +32,11 @@ Tarefas
     -   regras de entrada       -  liberação das portas tcp 6443, 12250 
     -   regras de saida         -          
 
+'''
+#
+**2- Provisionamento da Infraestrutura
+'''
 
-
-2- Provisionamento da Infraestrutura
     2.1- Subir um cluster Kubernetes (OKE ou manual).
     -   criação do cluster "teste-marcus" setando a rede e subnets que foram criadas nos itens a cima
     -   3 nodes
@@ -44,7 +48,9 @@ Tarefas
     2.3- Configurar um HPA (Horizontal Pod Autoscaler) para o RabbitMQ baseado no consumo de CPU/memória.
     -   hpa criado manifests/hpa.yaml
 
-3- Testes de Estresse
+'''
+#
+**3- Testes de Estresse
 '''
 
     3.1- Criar um gerador de carga que publique mensagens no RabbitMQ de forma massiva (por exemplo, usando Gatling, Locust, ou um simples script em Python com threads).
@@ -55,7 +61,10 @@ Tarefas
     o rabbit chegar em 30% de utilização de CPU
 
 '''
-4- Monitoramento e Observabilidade
+#
+** 4- Monitoramento e Observabilidade
+'''
+
     4.1- Configurar Prometheus e Grafana para coletar métricas do RabbitMQ.
     -   stack do prometheus configurada para coletar as metricas do serviço do rabbit e integrado com o grafana
 
@@ -63,3 +72,6 @@ Tarefas
     -   serviços monitorados e exibido com o dashboard oficial do rabbit
 
     4.3- Configurar alertas no Grafana ou na OCI Monitoring para identificar picos de carga e escalonamento.
+
+'''
+#    
